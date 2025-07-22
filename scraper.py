@@ -16,9 +16,8 @@ for quote in quotes:
     print("Author:", author)
     print("Tags:", tags)
     print("-" * 50)
+# CSV file
 import csv
-
-# CSV file create and write
 with open('quotes.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Quote', 'Author', 'Tags'])  # Header row
